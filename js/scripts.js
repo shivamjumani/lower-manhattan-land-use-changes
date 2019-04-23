@@ -5,8 +5,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2hpdmFtOTk3IiwiYSI6ImNqdWQ5ZDBicDB3bmE0ZHJ2N
 var map = new mapboxgl.Map({
   container: 'mapContainer',
   style: 'mapbox://styles/mapbox/light-v9',
-  center: [-74.007468, 40.710800],
-  zoom: 14,
+  center: [-74.017553,40.711442],
+  zoom: 14.25,
+  bearing: 31,
 });
 
 // Add zoom and rotation controls to the map.
@@ -17,22 +18,22 @@ var LandUseLookup = (code) => {
   switch (code) {
     case 1:
       return {
-        color: '#f4f455',
+        color: '#DDA0DD',
         description: '1 & 2 Family',
       };
     case 2:
       return {
-        color: '#f7d496',
+        color: '#EE82EE',
         description: 'Multifamily Walk-up',
       };
     case 3:
       return {
-        color: '#FF9900',
+        color: '#9400D3',
         description: 'Multifamily Elevator',
       };
     case 4:
       return {
-        color: '#f7cabf',
+        color: '#9932CC',
         description: 'Mixed Res. & Commercial',
       };
     case 5:
@@ -42,12 +43,12 @@ var LandUseLookup = (code) => {
       };
     case 6:
       return {
-        color: '#d36ff4',
+        color: '#FFFACD',
         description: 'Industrial & Manufacturing',
       };
     case 7:
       return {
-        color: '#dac0e8',
+        color: '#778899',
         description: 'Transportation & Utility',
       };
     case 8:
@@ -62,22 +63,22 @@ var LandUseLookup = (code) => {
       };
     case 10:
       return {
-        color: '#bab8b6',
+        color: '#808080',
         description: 'Parking Facilities',
       };
     case 11:
       return {
-        color: '#5f5f60',
+        color: '#A9A9A9',
         description: 'Vacant Land',
       };
     case 12:
       return {
-        color: '#5f5f60',
+        color: '#A9A9A9',
         description: 'Other',
       };
     default:
       return {
-        color: '#5f5f60',
+        color: '#A9A9A9',
         description: 'Other',
       };
   }

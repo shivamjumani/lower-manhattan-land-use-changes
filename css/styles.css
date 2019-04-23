@@ -4,6 +4,11 @@ html, body {
   margin:0
 }
 
+p {
+  line-height: 16px;
+  font-size: 14px;
+}
+
 #mapContainer {
   height: 100%;
   width: 100%;
@@ -12,35 +17,55 @@ html, body {
 }
 
 #sidebar {
-  width: 300px;
+  width: 400px;
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   z-index: 10;
   padding: 15px;
+  background-color: lightgray;
+  overflow: scroll;
 }
 
 .info-box {
-  top: 25px;
-  left: 25px;
+  top: 2px;
+  left: 5px;
   z-index: 10;
   background-color: #c3c3c3;
   padding: 15px;
-  border-radius: 11px;
-  box-shadow: 1px 1px 7px #525252;
+  padding-top: 10px;
   margin-bottom:15px
 }
 
+
+.legend {
+  line-height: 16px;
+}
+
+.labels {
+  font-size: 14px;
+  font-weight: bold;
+}
+
 h3 {
-  margin: 0 0 15px 0;
+  margin-top: 0px;
+  padding-top: 0px;
   font-size: 1rem;
 }
 
+h4 {
+  margin-top: 3px;
+}
+
 button {
-  padding: 10px;
-  font-weight: 500;
-  border-radius: 5px;
+  padding: 3px;
+  border-radius: 2px;
+  background-color: #c3c3c3;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: bold;
+  border-color: #c3c3c3;
 }
 
 .legend-color-box {
@@ -48,4 +73,14 @@ button {
   width: 15px;
   float: left;
   margin-right: 10px;
+}
+
+/* button {
+  width: 100px;
+  height: 25px;
+  align-content: center;
+} */
+
+button:focus {
+  background-color: gray;
 }
