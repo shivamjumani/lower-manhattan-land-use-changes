@@ -1,8 +1,10 @@
 html, body {
   height: 100%;
   width: 100%;
-  margin:0
+  margin:0;
+  font-family: "Palatino";
 }
+
 
 p {
   line-height: 16px;
@@ -17,14 +19,14 @@ p {
 }
 
 #sidebar {
-  width: 400px;
+  width: 350px;
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   z-index: 10;
   padding: 15px;
-  background-color: lightgray;
+  background-color: #DCD0C0;
   overflow: scroll;
 }
 
@@ -32,7 +34,7 @@ p {
   top: 2px;
   left: 5px;
   z-index: 10;
-  background-color: #c3c3c3;
+  background-color: #f4f4f4;
   padding: 15px;
   padding-top: 10px;
   margin-bottom:15px
@@ -40,11 +42,19 @@ p {
 
 
 .legend {
-  line-height: 16px;
+  line-height: 18px;
 }
 
 .labels {
+  font-size: 12px;
+}
+
+.labels-1 {
   font-size: 14px;
+  font-weight: bold;
+}
+
+#address {
   font-weight: bold;
 }
 
@@ -58,7 +68,7 @@ h4 {
   margin-top: 3px;
 }
 
-button {
+/* button {
   padding: 3px;
   border-radius: 2px;
   background-color: #c3c3c3;
@@ -66,6 +76,18 @@ button {
   font-size: 14px;
   font-weight: bold;
   border-color: #c3c3c3;
+} */
+
+button {
+  background-color: #C0B283; /* Green */
+  border: none;
+  color: white;
+  padding: 11px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Palatino";
 }
 
 .legend-color-box {
@@ -82,5 +104,5 @@ button {
 } */
 
 button:focus {
-  background-color: gray;
+  background-color: #E37222;
 }

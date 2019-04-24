@@ -9,49 +9,23 @@
     <meta name="author" content="SitePoint">
 
     <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <link rel="stylesheet" href="css/styles-home.css?v=1.0">
   </head>
 
   <body>
-    <div id="mapContainer">
-      <div id="sidebar">
-        <div class="info-box">
-          <h3>Visualize the land use changes in Lower Manhattan over the past two decades</h3>
-          <p>Once a strictly commercial neighborhood, Lower Manhattan today is a growing mixed-use neighborhood. Select a year, and hover over
-          the buildings to see how this neighborhood has changed over the past 2 decades.</p>
-        </div>
-        <div class="info-box">
-            <span class='labels' id="year-select">Select a year: </span>
-            <button type="button" class="2002">2002</button>
-            <button type="button" class="2010">2010</button>
-            <button type="button" class="2018">2018</button>
-        <br>
-        <br>
-        <span class="labels">Total commercial area (sqft): </span><span class="labels" id="total-com-area"></span><br/>
-        <span class="labels">Total residential area (sqft):</span><span class="labels" id="total-res-area"></span><br/>
-        <span class="labels">Total residential units: </span><span class="labels" id="total-res-units"></span><br/>
-        <br>
-        <span id="address" class="labels">Move the mouse over a lot for details</span><br/>
-        <span class="labels">Land use: </span><span class="labels" id="landuse"></span><br/>
-        <span class="labels">Built in: </span><span class="labels" id="yearBuilt"></span><br/>
-        <span class="labels">Number of residential units: </span><span class="labels" id="resiUnits"></span><br/>
-        </div>
+        <div class="intro-box">
+          <h2>Visualizing land use changes in Lower Manhattan</h2>
+          <p>Once a strictly commercial neighborhood,Lower Manhattan today is a growing mixeduse neighborhood.
+            An estimated 75,000 New Yorkers reside downtown—where few have lived since the late 19th century,
+            when transit facilitated “commuting” from uptown. </p>
+          <p>Using publically available PLUTO data I've created a tool to help visualize these changes
+          over the past 2 decades by taking snapshots of land use in 2002, 2010 and 2018. </p>
+          <div class="button">
+          <a href="page1.html">Enter</a>
+          </div>
 
-        <!-- <div class="info-box">
-          <!-- <h3>Fly to Neighborhood</h3>
-          <!-- These buttons use data attributes, which we can easily pull using jquery -->
-          <!-- <button class="flyto" data-neighborhood="park-slope">Park Slope</button>
-          <button class="flyto" data-neighborhood="morningside-heights">Morningside Heights</button>
-          <button class="flyto" data-neighborhood="fidi">FiDi</button>
-          <hr/>
-          <button class="flyto" data-neighborhood="greenpoint">Back to Greenpoint</button>  -->
-        <!-- </div> -->
-        <div class="info-box legend">
-          <h4>Legend</h4>
-          <!-- We'll programmatically make the legend here -->
-        </div>
+
       </div>
-    </div>
 
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
     <script
