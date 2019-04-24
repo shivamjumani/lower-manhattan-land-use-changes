@@ -553,3 +553,27 @@ map.on('style.load', function() {
     })
   })
 })
+
+function myFunction2002() {
+  $('#total-com-area').text("106 million");
+  $('#total-res-area').text("16 million");
+  $('#total-res-units').text("17,450");
+  $('#percent-res').text("12.7%");
+  $('#build-height').text("11.9 floors");
+}
+
+function myFunction2010() {
+  $('#total-com-area').text("105 million");
+  $('#total-res-area').text("33 million");
+  $('#total-res-units').text("30,000");
+  $('#percent-res').text("23.9%");
+  $('#build-height').text("13.1 floors");
+}
+
+function myFunction2018() {
+  $('#total-com-area').text("103 million");
+  $('#total-res-area').text("37 million");
+  $('#total-res-units').text("36,200");
+  $('#percent-res').text("25.9%");
+  $('#build-height').text("14.2 floors");
+}

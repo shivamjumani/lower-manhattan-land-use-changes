@@ -5,6 +5,12 @@ html, body {
   font-family: "Palatino";
 }
 
+h1 {
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  margin-top: 0px;
+}
 
 p {
   line-height: 16px;
@@ -26,7 +32,7 @@ p {
   bottom: 0;
   z-index: 10;
   padding: 15px;
-  background-color: #DCD0C0;
+  background-color: #94618E;
   overflow: scroll;
 }
 
@@ -54,7 +60,8 @@ p {
   font-weight: bold;
 }
 
-#address {
+.labels-2 {
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -79,10 +86,11 @@ h4 {
 } */
 
 button {
-  background-color: #C0B283; /* Green */
+  background-color: #E9B000; /* Green */
+  margin-top: 6px;
   border: none;
   color: white;
-  padding: 11px 32px;
+  padding: 8px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
