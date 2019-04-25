@@ -46,6 +46,10 @@ p {
   margin-bottom:15px
 }
 
+#interactive-box {
+  background-color: #f4f4f4;
+}
+
 
 .legend {
   line-height: 18px;
@@ -53,6 +57,8 @@ p {
 
 .labels {
   font-size: 12px;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .labels-1 {
@@ -73,6 +79,7 @@ h3 {
 
 h4 {
   margin-top: 3px;
+  margin-bottom: 6px;
 }
 
 /* button {
@@ -87,7 +94,8 @@ h4 {
 
 button {
   background-color: #E9B000; /* Green */
-  margin-top: 6px;
+  margin-top: 8px;
+  margin-bottom: 12px;
   border: none;
   color: white;
   padding: 8px 32px;

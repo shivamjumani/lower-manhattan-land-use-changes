@@ -33,7 +33,7 @@ var LandUseLookup = (code) => {
       };
     case 4:
       return {
-        color: '#9932CC',
+        color: '#9370DB',
         description: 'Mixed Res. & Commercial',
       };
     case 5:
@@ -253,6 +253,8 @@ map.on('style.load', function() {
         $('#landuse').text(landuseDescription);
         $('#yearBuilt').text(lot.properties.yearBuilt);
         $('#resiUnits').text(lot.properties.unitsRes);
+        document.getElementById("interactive-box").style.backgroundColor = LandUseLookup(parseInt(lot.properties.landUse2)).color;
+        document.getElementById("interactive-box").style.opacity = '0.7'
 
         // set this lot's polygon feature as the data for the highlight source
         map.getSource('highlight-feature-2002').setData(lot.geometry);
@@ -396,6 +398,8 @@ map.on('style.load', function() {
         $('#landuse').text(landuseDescription);
         $('#yearBuilt').text(lot.properties.YearBuilt);
         $('#resiUnits').text(lot.properties.UnitsRes);
+        document.getElementById("interactive-box").style.backgroundColor = LandUseLookup(parseInt(lot.properties.LandUse)).color
+        document.getElementById("interactive-box").style.opacity = '0.7'
 
         // set this lot's polygon feature as the data for the highlight source
         map.getSource('highlight-feature-2010').setData(lot.geometry);
@@ -538,6 +542,8 @@ map.on('style.load', function() {
         $('#landuse').text(landuseDescription);
         $('#yearBuilt').text(lot.properties.YearBuilt);
         $('#resiUnits').text(lot.properties.UnitsRes);
+        document.getElementById("interactive-box").style.backgroundColor = LandUseLookup(parseInt(lot.properties.LandUse)).color
+        document.getElementById("interactive-box").style.opacity = '0.7'
 
         // set this lot's polygon feature as the data for the highlight source
         map.getSource('highlight-feature-2018').setData(lot.geometry);
